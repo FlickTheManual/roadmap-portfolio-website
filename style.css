@@ -73,8 +73,14 @@ header nav li:first-child {
 	list-style: none;
 }
 
-header nav a:hover {
+header nav a:hover,
+header nav a.active {
 	text-decoration: underline;
+}
+
+header nav a.active {
+	color: var(--burnt-sienna);
+	font-weight: 500;
 }
 
 .logo {
