@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	/* CSS HEX */
+	--burnt-sienna: #dd6e42ff;
+	--dutch-white: #e8dab2ff;
+	--paynes-gray: #4f6d7aff;
+	--columbia-blue: #c0d6dfff;
+	--platinum: #eaeaeaff;
+	--barn-red: #6f1a07ff;
+	--bistre: #2b2118ff;
+}
+
+html {
+	background-color: var(--dutch-white);
+}
+
+body {
+	font-family: "Noto Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+	margin-top: 1rem;
+	margin-left: 0.6rem;
+	margin-right: 0.6rem;
+	color: var(--bistre);
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 2px solid var(--burnt-sienna);
+}
+
+a {
+	color: var(--bistre);
+}
+
+a:hover {
+	color: var(--burnt-sienna);
+}
+header nav ul {
+	padding: 0;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+header nav li {
+	list-style: "|";
+	margin: 0;
+}
+
+header nav li:first-child {
+	text-decoration: none;
+	list-style: none;
+}
+
+.logo {
+	height: 8rem;
+	font-family: "Leckerli One", cursive;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	font-size: xx-large;
+	display: inline-flex;
+}
+
+a,
+.logo-color-alternate {
+	transition-property: color, background-color, border-color,
+		text-decoration-color, fill, stroke;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 300ms;
+}
+
+.logo a,
+.logo a:hover .logo-color-alternate,
+header nav li a {
+	text-decoration: none;
+	color: var(--bistre);
+}
+
+.logo a .logo-color-alternate,
+.logo a:hover,
+header nav li a:hover {
+	color: var(--burnt-sienna);
+}
+
+.logo img {
+	height: 6rem;
+	flex-grow: 2;
+	margin: 0 2em;
+}
