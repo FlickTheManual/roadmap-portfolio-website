@@ -51,7 +51,7 @@ header nav ul {
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 header nav li {
@@ -86,6 +86,19 @@ a,
 	transition-duration: 300ms;
 }
 
+.logo a {
+	display: flex;
+	place-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.logo img {
+	width: 6rem;
+	height: 6rem;
+	align-self: center;
+}
+
 .logo a,
 .logo a:hover .logo-color-alternate,
 header nav li a {
@@ -97,10 +110,4 @@ header nav li a {
 .logo a:hover,
 header nav li a:hover {
 	color: var(--burnt-sienna);
-}
-
-.logo img {
-	height: 6rem;
-	flex-grow: 2;
-	margin: 0 2em;
 }
