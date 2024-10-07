@@ -43,6 +43,14 @@ a:hover {
 	color: var(--burnt-sienna);
 }
 
+.logo a:hover #path0 {
+	fill: var(--burnt-sienna);
+}
+
+.logo a:hover #path1 {
+	fill: var(--bistre);
+}
+
 header nav {
 	padding: 1em 0;
 }
@@ -80,6 +88,7 @@ header nav a:hover {
 }
 
 a,
+svg *,
 .logo-color-alternate {
 	transition-property: color, background-color, border-color,
 		text-decoration-color, fill, stroke;
@@ -94,7 +103,7 @@ a,
 	justify-content: space-around;
 }
 
-.logo img {
+.logo svg {
 	width: 6rem;
 	height: 6rem;
 	align-self: center;
@@ -118,7 +127,7 @@ header nav li a:hover {
 		margin: 0 auto;
 	}
 
-	.logo img {
+	.logo svg {
 		margin-right: 1rem;
 	}
 
@@ -152,7 +161,7 @@ header nav li a:hover {
 		margin-left: 0;
 	}
 
-	.logo img {
+	.logo svg {
 		height: 4rem;
 		width: 4rem;
 	}
