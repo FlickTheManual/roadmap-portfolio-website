@@ -31,8 +31,9 @@ header {
 	flex-direction: column;
 	border-bottom: 2px solid var(--burnt-sienna);
 	padding-top: 1rem;
-	padding-left: 0.6rem;
-	padding-right: 0.6rem;
+
+	/*padding-left: 0.6rem;
+	padding-right: 0.6rem; */
 }
 
 header:hover {
@@ -56,7 +57,7 @@ a:hover {
 }
 
 header nav {
-	padding: 1em 0;
+	padding: 1em 0.6rem;
 }
 
 header nav ul {
@@ -135,15 +136,13 @@ header nav li a:hover {
 
 .full {
 	padding-top: 1rem;
-	padding-left: 0.6rem;
-	padding-right: 0.6rem;
 }
 
 #hero {
 	background-color: var(--barn-red);
 	display: flex;
 	flex-direction: column;
-	padding: 4.9rem 0;
+	padding: 3rem 0;
 }
 
 #hero h1 {
@@ -158,7 +157,7 @@ header nav li a:hover {
 	color: var(--columbia-blue);
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 540px) {
 	.logo {
 		margin: 0 auto;
 	}
@@ -179,12 +178,16 @@ header nav li a:hover {
 	header nav ul li {
 		margin: 0 1rem;
 	}
+
+	#hero {
+		padding: 5.4rem;
+	}
 }
 
 @media screen and (min-width: 920px) {
 	header {
-		flex-direction: row;
-		place-content: center;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 
 	header > * {
@@ -195,6 +198,7 @@ header nav li a:hover {
 		font-size: x-large;
 		height: 5rem;
 		margin-left: 0;
+		padding-left: 1rem;
 	}
 
 	.logo svg {
@@ -207,13 +211,17 @@ header nav li a:hover {
 		padding: 0;
 		margin-right: 0;
 	}
+
+	#hero {
+		grid-column: span 2 / span 2;
+	}
 }
 
 @media screen and (min-width: 1024px) {
 	body {
 		width: 1024px;
 		margin: 0 auto;
-		padding: 0.2rem 2rem;
+		/* padding: 0.2rem 2rem; */
 		filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 	}
 }
