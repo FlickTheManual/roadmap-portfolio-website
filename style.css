@@ -178,6 +178,15 @@ header nav li a:hover {
 	padding-top: 1rem;
 }
 
+article {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+footer {
+	padding: 1rem;
+}
+
 #hero {
 	/* background-color: var(--barn-red); */
 	display: flex;
@@ -197,12 +206,18 @@ header nav li a:hover {
 	color: var(--bistre);
 }
 
-#showroom {
+#showroom,
+#articles {
 	text-align: justify;
 }
 
 #articles {
-	padding-top: 4rem;
+	background-color: var(--platinum);
+	padding: 1rem;
+}
+
+#fav-license {
+	font-size: xx-small;
 }
 
 @media screen and (min-width: 540px) {
