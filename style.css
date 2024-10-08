@@ -40,6 +40,13 @@ header:hover {
 	border-bottom: 2px solid var(--bistre);
 }
 
+h3 {
+	text-align: center;
+	color: var(--barn-red);
+	text-decoration: underline;
+	font-size: large;
+}
+
 a {
 	color: var(--bistre);
 }
