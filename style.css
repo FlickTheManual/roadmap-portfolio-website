@@ -29,22 +29,55 @@ body {
 header {
 	display: flex;
 	flex-direction: column;
-	border-bottom: 2px solid var(--burnt-sienna);
 	padding-top: 1rem;
-
-	/*padding-left: 0.6rem;
-	padding-right: 0.6rem; */
-}
-
-header:hover {
-	border-bottom: 2px solid var(--bistre);
 }
 
 h3 {
 	text-align: center;
 	color: var(--barn-red);
 	text-decoration: underline;
+	font-size: x-large;
+}
+
+h4 {
 	font-size: large;
+	color: var(--paynes-gray);
+}
+
+hr {
+	margin: 2rem 0;
+}
+
+.col {
+	padding: 1rem;
+	background-color: var(--platinum);
+	box-shadow: 0 -1px 3px var(--bistre), 0;
+}
+
+.col:nth-child(2) {
+	background-color: var(--dutch-white);
+}
+
+a.button {
+	border: 2px solid var(--paynes-gray);
+	color: var(--paynes-gray);
+	padding: 1rem;
+	font-size: large;
+	display: block;
+	text-align: center;
+	font-weight: 700;
+}
+
+a.button:hover {
+	background-color: var(--paynes-gray);
+	color: var(--platinum);
+}
+
+span.label {
+	background-color: var(--columbia-blue);
+	border-radius: 1rem;
+	padding: 0.4rem 0.8rem;
+	font-size: smaller;
 }
 
 a {
@@ -146,22 +179,30 @@ header nav li a:hover {
 }
 
 #hero {
-	background-color: var(--barn-red);
+	/* background-color: var(--barn-red); */
 	display: flex;
 	flex-direction: column;
-	padding: 3rem 0;
+	padding: 1rem 0;
 }
 
 #hero h1 {
 	font-size: x-large;
 	text-align: center;
-	color: var(--dutch-white);
+	color: var(--barn-red);
 }
 
 #hero h2 {
 	font-size: small;
 	text-align: center;
-	color: var(--columbia-blue);
+	color: var(--bistre);
+}
+
+#showroom {
+	text-align: justify;
+}
+
+#articles {
+	padding-top: 4rem;
 }
 
 @media screen and (min-width: 540px) {
